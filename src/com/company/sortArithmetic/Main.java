@@ -19,7 +19,6 @@ public class Main {
 
 //            1 ~ array.length之间的元素
             int temp = array[index];
-//            index 的上一个元素的索引
             int k = index - 1;
 //            一直将index位置的元素与index-1位置的元素作对比，确定数据进行移动的范围
             while (k >= 0 && array[k] > temp)

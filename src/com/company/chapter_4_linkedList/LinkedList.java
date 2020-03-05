@@ -6,7 +6,6 @@ public class LinkedList<E> {
         public E e;
         //如果节点的next为空，说明该节点为链表中的最后一个节点
         public Node next;
-
         public Node(E e, Node next) {
             this.e = e;
             this.next = next;
@@ -59,7 +58,7 @@ public class LinkedList<E> {
             prev = prev.next;
 
             Node node = new Node(e);
-            node.next = prev.next;//新节点的next节点 接管 prev节点的next节点
+            node.next = prev.next;//新节点的next节点 指向 prev节点的next节点
             prev.next = node;//新节点必须成为 prev节点的next节点
 
 //        prev.next = new Node(e, prev.next);
