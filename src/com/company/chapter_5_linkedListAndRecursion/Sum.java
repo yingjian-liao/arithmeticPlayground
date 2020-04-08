@@ -12,9 +12,7 @@ public class Sum {
         if(l == arr.length)
             return 0;
 
-        int i = arr[l];
-        int sum = sum(arr, l + 1);
-        return i + sum;
+        return arr[l] + sum(arr, l + 1);
     }
 
     public static void main(String[] args) {
