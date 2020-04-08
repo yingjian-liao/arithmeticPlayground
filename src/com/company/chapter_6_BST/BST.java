@@ -40,12 +40,13 @@ public class BST<E extends Comparable<E>> {
 
     public void add(E e) {
         root = add(root, e);
-        size++;
+
     }
 
     private Node add(Node node, E e) {
 
         if (node == null) {
+            size++;
             return new Node(e);
         }
 
@@ -225,18 +226,17 @@ public class BST<E extends Comparable<E>> {
         return ret;
     }
 
-
     //    08:13
 //    删除掉以node为根的二分搜索树中的最小节点
 //    返回删除节点后新的二分搜索树的根
     private Node removeMax(Node node){
         if (node.right==null) {
             Node leftNode = node.left;
-            node.right = null;
+            node.left = null;
             size--;
             return leftNode;
         }
-        node.left = removeMax(node.left);
+        node.right = removeMax(node.right);
         return node;
     }
 
@@ -352,3 +352,4 @@ public class BST<E extends Comparable<E>> {
     }
 
 }
+
