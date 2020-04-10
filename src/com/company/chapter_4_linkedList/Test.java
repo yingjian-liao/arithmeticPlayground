@@ -8,10 +8,17 @@ public class Test {
         }
 
 
-        linkedList.add(2, 666);
-        System.out.println(linkedList);
-        linkedList.removeElement(666);
-        System.out.println(linkedList);
+
+
+
+
+
+
+
+//        linkedList.add(2, 666);
+//        System.out.println(linkedList);
+//        linkedList.removeElement(666);
+//        System.out.println(linkedList);
 //
 //        LinkedList.Node node = linkedList.getDummyHead();
 //

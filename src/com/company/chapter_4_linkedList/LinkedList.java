@@ -133,9 +133,6 @@ public class LinkedList<E> {
         prev.next = retNode.next;
         retNode.next = null;
 
-
-//        prev.next = prev.next.next;
-
         size --;
 
         return retNode.e;
